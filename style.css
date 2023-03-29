@@ -6,30 +6,21 @@
   margin: 0;
 }
 
-
-
-
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Overpass:ital,wght@1,100&family=Tajawal&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Open+Sans:wght@700;800&family=Overpass:ital,wght@1,100&family=Tajawal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Overpass:ital,wght@1,100&family=Tajawal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Open+Sans:wght@700;800&family=Overpass:ital,wght@1,100&family=Tajawal&display=swap');
 
 body {
     background-color: rgb(202, 227, 91);
     font-family: 'Open Sans', sans-serif;
     font-family: 'Overpass', sans-serif;
     font-family: 'Tajawal', sans-serif;
-
 }
-
 
 .header {
     display:flex;
     justify-content: center;
     margin-top:40px;
     color: rgb(43, 38, 116);
-    font-family: 'Kanit', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Overpass', sans-serif;
-    font-family: 'Tajawal', sans-serif;
     font-size: 60px;
     text-shadow: 2px 2px white;
 }
@@ -40,10 +31,7 @@ body {
     width: 450px;
     height: 450px;
     grid-gap: 5px;
-    border-collapse: separate; 
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Overpass', sans-serif;
-    font-family: 'Tajawal', sans-serif;
+    border-collapse: separate;
 }
 
 .big_container {
