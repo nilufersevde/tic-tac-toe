@@ -4,7 +4,7 @@ Vanilla JS Tic Tac Toe project that I created as a part of The Odin Project curr
 
 #Demo
 
-
+https://nilufersevde.github.io/tic-tac-toe/
 
 #Things I learn 
 
