@@ -54,10 +54,10 @@ const game = (() => {
         for (condition of winningConditions) {
             if (board[condition[0]] == board[condition[1]]&& board[condition[1]] == board[condition[2]]&&
                 board[condition[0]] != ''){
-                squares[condition[0]].style.backgroundColor="rgb(36, 237, 18)";
-                squares[condition[1]].style.backgroundColor="rgb(36, 237, 18)";
-                squares[condition[2]].style.backgroundColor="rgb(36, 237, 18)";
-                button.style.backgroundColor="rgb(36, 237, 18)";
+                squares[condition[0]].style.backgroundColor="rgb(39, 197, 39)";
+                squares[condition[1]].style.backgroundColor="rgb(39, 197, 39)";
+                squares[condition[2]].style.backgroundColor="rgb(39, 197, 39)";
+                button.style.backgroundColor="rgb(39, 197, 39)";
                 turn.innerHTML = "";
                 turn.innerHTML = `The winner is ${currentPlayer.name}!`;
                 turn.style.fontSize = "30px";
@@ -72,7 +72,7 @@ const game = (() => {
                 winnerDeclared = true;
                 turn.innerHTML = "";
                 turn.innerHTML = `It is a tie!`;
-                button.style.backgroundColor="rgb(36, 237, 18)";
+                button.style.backgroundColor="rgb(39, 197, 39)";
                 turn.style.fontSize = "30px";
                 turn.style.color = "red";
                 turn.style.textShadow = "1px 1px white"
