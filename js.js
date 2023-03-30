@@ -29,8 +29,8 @@ const game = (() => {
         turn.innerHTML = "";
         turn.innerHTML = "It is playerX's turn";
         winnerDeclared = false;
-        squares.forEach(item => item.style.backgroundColor="rgb(126, 231, 245)")
-        button.style.backgroundColor = "rgb(126, 231, 245)";
+        squares.forEach(item => item.style.backgroundColor=" rgb(190,217,232)")
+        button.style.backgroundColor = "rgb(43, 38, 116)";
         turn.style.color = "aliceblue";
         turn.style.fontSize = "25px";
         turn.style.textShadow = "none"
@@ -54,14 +54,14 @@ const game = (() => {
         for (condition of winningConditions) {
             if (board[condition[0]] == board[condition[1]]&& board[condition[1]] == board[condition[2]]&&
                 board[condition[0]] != ''){
-                squares[condition[0]].style.backgroundColor="rgb(39, 197, 39)";
-                squares[condition[1]].style.backgroundColor="rgb(39, 197, 39)";
-                squares[condition[2]].style.backgroundColor="rgb(39, 197, 39)";
-                button.style.backgroundColor="rgb(39, 197, 39)";
+                squares[condition[0]].style.backgroundColor="rgb(79, 174, 174)";
+                squares[condition[1]].style.backgroundColor="rgb(79, 174, 174) ";
+                squares[condition[2]].style.backgroundColor="rgb(79, 174, 174)  ";
+                button.style.backgroundColor="rgb(79, 174, 174)  ";
                 turn.innerHTML = "";
                 turn.innerHTML = `The winner is ${currentPlayer.name}!`;
                 turn.style.fontSize = "30px";
-                turn.style.color = "red";
+                turn.style.color = "rgb(175,76,0)";
                 turn.style.textShadow = "1px 1px white"
                 winnerDeclared = true;
             }}}
@@ -72,9 +72,9 @@ const game = (() => {
                 winnerDeclared = true;
                 turn.innerHTML = "";
                 turn.innerHTML = `It is a tie!`;
-                button.style.backgroundColor="rgb(39, 197, 39)";
+                button.style.backgroundColor="rgb(79, 174, 174) ";
                 turn.style.fontSize = "30px";
-                turn.style.color = "red";
+                turn.style.color = "rgb(175,76,0) ";
                 turn.style.textShadow = "1px 1px white"
             }
         }
@@ -86,8 +86,8 @@ const game = (() => {
                 console.log(winnerDeclared)
                 round++
                 const currentPlayer = ( round % 2 === 1 ? playerOne : playerTwo);
-                if (currentPlayer == playerOne) {item.style.color="rgb(142, 86, 195)"}
-                else {item.style.color = "rgb(177, 72, 72)" };
+                if (currentPlayer == playerOne) {item.style.color=" rgb(175,76,0) "}
+                else {item.style.color = " rgb(209,126,49) " };
                 const nextPlayer = ( round % 2 === 1 ? playerTwo : playerOne);
                 turn.innerHTML = "";
                 turn.innerHTML = `It is ${nextPlayer.name}'s turn`;

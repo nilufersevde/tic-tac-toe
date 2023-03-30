@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Open+Sans:wght@700;800&family=Overpass:ital,wght@1,100&family=Tajawal&display=swap');
 
 body {
-    background-color: rgb(202, 227, 91);
+    background-color:   rgb(190,217,232)    ;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Overpass', sans-serif;
     font-family: 'Tajawal', sans-serif;
@@ -28,9 +28,7 @@ body {
 .game_board {
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    width: 450px;
-    height: 450px;
-    grid-gap: 5px;
+    grid-gap: 10px;
     border-collapse: separate;
     
 }
@@ -47,16 +45,16 @@ body {
 } 
 
 .square {
-    border: 2px solid rgb(43, 38, 116);
-    font-size: 100px;
+    border: 5px solid rgb(43, 38, 116);
+    font-size: 80px;
     text-align: center;
     cursor: pointer;
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(126, 231, 245);
+    background-color: rgb(190,217,232)  ;
 }
 
 .button {
@@ -66,22 +64,22 @@ body {
 }
 
 button {
-    background-color: rgb(126, 231, 245);
-    color:rgb(43, 38, 116) ;
-    padding: 7px;
-    font-size: 22px;
+    background-color: rgb(43, 38, 116);
+    color:rgb(255, 255, 255) ;
+    padding: 10px;
+    font-size: 25px;
     border-radius: 5px;
     border: 1px solid rgb(43, 38, 116);
     cursor: pointer;
 }
 
 .turn {
-    color: rgb(255, 255, 255);
+    color: rgb(43, 38, 116);
     margin-top: 40px;
     font-size:25px;
 
 }
 
 .square:hover {
-    background-color: rgb(0, 199, 199);
+    background-color: rgb(79, 174, 174);
 }
