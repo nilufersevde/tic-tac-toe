@@ -81,5 +81,5 @@ button {
 }
 
 .square:hover {
-    background-color: rgb(79, 174, 174);
+    background-color: rgb(79, 174, 174) !important;
 }

@@ -29,9 +29,9 @@ const game = (() => {
         turn.innerHTML = "";
         turn.innerHTML = "It is playerX's turn";
         winnerDeclared = false;
-        squares.forEach(item => item.style.backgroundColor=" rgb(190,217,232)")
+        squares.forEach(item => item.style.backgroundColor="rgb(190,217,232)")
         button.style.backgroundColor = "rgb(43, 38, 116)";
-        turn.style.color = "aliceblue";
+        turn.style.color = "rgb(43, 38, 116)";
         turn.style.fontSize = "25px";
         turn.style.textShadow = "none"
     }
