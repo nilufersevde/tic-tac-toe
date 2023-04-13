@@ -83,7 +83,6 @@ const game = (() => {
     squares.forEach(item => 
         item.addEventListener('click',() => {
             if (item.innerHTML !="" || winnerDeclared == true) return;
-                console.log(winnerDeclared)
                 round++
                 const currentPlayer = ( round % 2 === 1 ? playerOne : playerTwo);
                 if (currentPlayer == playerOne) {item.style.color=" rgb(175,76,0) "}
@@ -96,8 +95,7 @@ const game = (() => {
                 board[index]=currentSign;
                 render();
                 winnerCheck(currentPlayer);
-                roundCheck(round);
-
+                if (winnerDeclared !== true) {
+                roundCheck(round);}
     }))
-    return {round, board, restartGame}
 })()
